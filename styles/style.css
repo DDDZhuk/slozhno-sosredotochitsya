@@ -2,158 +2,222 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-
-
 }
-.header{
-  background-image: url(../images/cover-image-dark.png);
+
+.header {
+  position: relative;
+  background-image: var(--background-image);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  padding: 10px;
-  
+  padding: 10px 10px 0 10px;
+  width: 375px;
 }
 .decorated-zone-right-up {
-  color: var( --accent-color);
+  color: var(--color-text-right-up);
   position: absolute;
-  top:10px;
-  left:303px;
-  font-family: IBM Plex Mono;
+  top: 10px;
+  left: 303px;
+  font-family: IBM Plex Mono, sans-serif;
   font-size: 18px;
 }
 
-.decorated-zone-right-up::after{
-    background-image: url(../images/Ellipse\ 4.svg);
-    background-size: 24px 22px;
-    width: 25px;
-    height: 25px;
-    display: inline-block;
-    content: "";
-    position: absolute;
-    top: 1px;
-    right: -27px;
-    border-inline-end: 1px solid var(--accent-color);
-    border-top: 1px solid var(--accent-color);
+.decorated-zone-right-up::after {
+  background-image: var(--color-imge-right-up);
+  background-size: 24px 22px;
+  width: 25px;
+  height: 25px;
+  content: "";
+  position: absolute;
+  top: 1px;
+  right: -27px;
+  border-inline-end: 1px solid var(--color-text_button-border);
+  border-top: 1px solid var(--color-text_button-border);
 }
 
 .header__theme-menu {
   display: flex;
   justify-content: flex-end;
   margin-block-start: 63px;
-  margin-right: 3px ;
-  
+  margin-right: 3px;
 }
-.header__theme-menu-list{
+.header__theme-menu-list {
   display: flex;
   flex-direction: column;
-  gap:10px;
-  
+  gap: 10px;
 }
-.header__theme-menu-button{
-  display: flex;
+.header__theme-menu-button {
   min-height: 26px;
   padding: 0px 13px;
-  justify-content: center;
-  align-items: center;
   background-color: transparent;
-  color:var( --accent-color);
-  font-family: IBM Plex Mono;
+  color: var(--color-text_button-border);
+  font-family: IBM Plex Mono, sans-serif;
   text-transform: lowercase;
-  font-size: clamp(18px, 0.7054rem + 0.7238vw, 1.25rem);
+  font-size: 18px;
   border: none;
+}
 
+.header__theme-menu-button_active {
+  pointer-events: none;
+  border: 1px solid var(--color-text_button-border);
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid var(--color-text_button-border);
+}
+.header__theme-menu-button:focus {
+  outline: none;
+}
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--accent-color);
 }
 
 .heade {
   display: flex;
   flex-wrap: wrap;
-  color: var(--color-head);
-  margin-block-start:68px ;
-  margin-right:10px ;
-
-
-text-shadow: 4px 4px 0px  var( --accent-color);
-font-family: IBM Plex Mono;
-font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
-font-style: normal;
-font-weight: 700;
-line-height: 82.5%;
-
+  margin-block-start: 68px;
+  margin-right: 10px;
 }
 
+.style-big-text {
+  text-shadow: 4px 4px 0px var(--accent-color);
+  color: var(--color-head);
+  font-family: IBM Plex Mono, sans-serif;
+  font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
+  font-weight: bold;
+  line-height: 82.5%;
+}
 
-
+.box-title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
 
 .title-decor {
-  font-family: IBM Plex Mono;
-font-size: 18px;
-font-weight: 700;
-line-height: 130% ;
-color: var(--color-titel);
-background-color: var(--accent-color);
-
+  font-family: IBM Plex Mono, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 130%;
+  color: var(--color-titel);
+  background-color: var(--accent-color);
 }
 
 .title-head {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin-block-start: 57px;
-margin-bottom: 56px;
+  margin-bottom: 56px;
 }
 
-.title-head::after{
+.title-head::after {
   width: 25px;
   height: 25px;
   display: inline-block;
   content: "";
   position: absolute;
-  top: 635px;
-  right: 341px;
-  border-inline-start: 1px solid var(--accent-color);
-  border-bottom: 1px solid var(--accent-color);
+  top: 147px;
+  right: 332px;
+  border-inline-start: 1px solid var(--color-text_button-border);
+  border-bottom: 1px solid var(--color-text_button-border);
   z-index: 1;
 }
 
-
 .main {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(375px, 100%),1fr));
   background-color: var(--background-color);
-  padding: 0 10px 0 10px;
-  
+  padding: 10px 10px 0 9px;
+  width: 375px;
 }
 
 .section {
-margin-top: 30px;
+  margin-top: 30px;
 }
-.section-indent{
-margin-top: 40px;
+.section-indent {
+  margin-top: 40px;
 }
 .title-section {
   color: var(--accent-color);
   background: transparent;
-  font-family: IBM Plex Mono;
+  font-family: IBM Plex Mono, sans-serif;
   font-size: 18px;
-  font-weight: 700;
-  line-height: 130% ;
-  padding:0 0 20px 0;
+  font-weight: bold;
+  line-height: 130%;
+  padding: 0 0 20px 0;
 }
 
 .text {
   color: var(--color-text);
-  font-family: IBM Plex Mono;
-font-size: 18px;
-font-weight: 400;
-line-height: 130%;
-padding-block-start: 10px;
-padding-bottom: 20px;
+  font-family: IBM Plex Mono, sans-serif;
+  font-size: 18px;
+  font-weight: regular;
+  line-height: 130%;
+  padding-block-start: 10px;
+  padding-bottom: 20px;
+}
+
+.link {
+  color: var(--color-text);
+  text-shadow: 2px 1px 0px var(--accent-color);
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--color-text);
+  text-decoration: underline;
+  text-decoration-color: var(--color-text);
+}
+
+.link:focus {
+  outline: none;
+}
+
+.link:focus-visible {
+  outline: 1px solid var(--color-text);
 }
 
 .title-decor.thin-text {
-  font-weight: 400;
-  
+  font-weight: regular;
 }
-.title-decor.title-decor-indent{
+.title-decor.title-decor-indent {
   margin-block-end: 20px;
-} 
+}
+
+.picture {
+  width: 355px;
+  margin-block-start: 7px;
+}
+
+.footer {
+  position: relative;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 695px;
+  width: 375px;
+  padding: 50px 10px 10px 10px;
+}
+
+.style-big-text.footer-text-position::after {
+  width: 25px;
+  height: 25px;
+  content: "";
+  position: absolute;
+  top: 44px;
+  right: 11px;
+  border-inline-end: 1px solid var(--color-text_button-border);
+  border-top: 1px solid var(--color-text_button-border);
+}
+
+.style-big-text.footer-text-position::before {
+  width: 25px;
+  height: 25px;
+  content: "";
+  position: absolute;
+  top: 665px;
+  right: 342px;
+  border-inline-start: 1px solid var(--color-text_button-border);
+  border-bottom: 1px solid var(--color-text_button-border);
+}

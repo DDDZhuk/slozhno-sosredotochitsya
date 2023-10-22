@@ -1,0 +1,141 @@
+@media (width >= 1024px) {
+  .header {
+    width: 1024px;
+    padding: 10px 10px 0 0px;
+    background-attachment: inherit;
+  }
+
+  .decorated-zone-right-up {
+    top: 20px;
+    left: 952px;
+  }
+
+  .header__theme-menu-list {
+    flex-direction: row;
+  }
+
+  .header__theme-menu {
+    margin-block-start: 9px;
+    margin-right: 379px;
+  }
+
+  .heade {
+    margin-block-start: 269px;
+    padding: 6px;
+  }
+
+  .title-head {
+    margin-block-start: 108px;
+    margin-bottom: 112px;
+    margin-right: 2px;
+    width: 491px;
+  }
+
+  .box-title {
+    padding-block-end: 25px;
+  }
+
+  .title-head::after {
+    top: 161px;
+    right: 960px;
+  }
+
+  .main {
+    padding: 0 20px;
+    width: 1024px;
+  }
+  .section-columns-tablet {
+    display: grid;
+    grid-template-columns: 343px 470px;
+    margin-block-start: 59px;
+  }
+
+  .text-column-dekstop {
+    width: 649px;
+  }
+  .title-section {
+    padding-left: 7px;
+  }
+
+  .text-columns-desktop {
+    display: grid;
+    grid-template-columns: repeat(3, 315px);
+    gap: 20px;
+    padding-left: 7px;
+  }
+  .title-section-tablet {
+    margin-block-start: 60px;
+    width: 280px;
+  }
+
+  .sction-blok-tablet_img {
+    margin-block-start: 60px;
+    padding-left: 7px;
+  }
+
+  .pictures {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+    padding-top: 20px;
+    align-items: start;
+  }
+  .picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-block-start: 0;
+  }
+
+  .picture-tablet-up_left {
+    grid-column: 1/3;
+    width: 649px;
+    height: 260px;
+  }
+
+  .picture-tablet-up_end {
+    grid-row: 1/3;
+    grid-column: 3/3;
+    width: 315px;
+    height: 595px;
+  }
+  .picture-tablet-center_center {
+    grid-row: 2/2;
+    grid-column: 2/2;
+    width: 315px;
+    height: 315px;
+  }
+  .picture-tablet-center_left {
+    grid-row: 2/4;
+    grid-column: 1/1;
+    width: 315px;
+    height: 768px;
+  }
+  .picture-tablet-end_end {
+    grid-row: 3/3;
+    grid-column: 2/4;
+    width: 649px;
+    height: 428px;
+  }
+
+  .footer {
+    min-height: 827px;
+    width: 1024px;
+    padding: 20px;
+  }
+  .footer-text-position {
+    margin-block-start: 58px;
+    margin-left: 13px;
+  }
+
+  .style-big-text.footer-text-position::after {
+    right: 12px;
+    top: 79px;
+  }
+
+  .style-big-text.footer-text-position::before {
+    top: 782px;
+    right: 971px;
+  }
+}
