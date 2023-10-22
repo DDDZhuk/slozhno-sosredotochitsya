@@ -1,18 +1,21 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+  background-image: var(--background-image);
+  background-attachment: fixed;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 
 .header {
   position: relative;
   background-image: var(--background-image);
+  background-attachment: initial;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   padding: 10px 10px 0 10px;
   width: 375px;
+  height: 100%;
 }
 .decorated-zone-right-up {
   color: var(--color-text-right-up);
@@ -198,6 +201,7 @@
   min-height: 695px;
   width: 375px;
   padding: 50px 10px 10px 10px;
+  height: 100%;
 }
 
 .style-big-text.footer-text-position::after {
