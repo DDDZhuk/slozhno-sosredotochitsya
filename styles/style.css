@@ -3,16 +3,15 @@
 .page {
   background-image: var(--background-image);
   background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 
 .header {
   position: relative;
-  background-image: var(--background-image);
-  background-attachment: initial;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   padding: 10px 10px 0 10px;
   width: 375px;
   height: 100%;
@@ -22,7 +21,7 @@
   position: absolute;
   top: 10px;
   left: 303px;
-  font-family: IBM Plex Mono, sans-serif;
+  font-family: "IBM Plex Mono", Arial, sans-serif;
   font-size: 18px;
 }
 
@@ -86,7 +85,7 @@
 .style-big-text {
   text-shadow: 4px 4px 0px var(--accent-color);
   color: var(--color-head);
-  font-family: IBM Plex Mono, sans-serif;
+  font-family: "IBM Plex Mono", Arial, sans-serif;
   font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
   font-weight: bold;
   line-height: 82.5%;
@@ -99,7 +98,7 @@
 }
 
 .title-decor {
-  font-family: IBM Plex Mono, sans-serif;
+  font-family: "IBM Plex Mono", Arial, sans-serif;
   font-size: 18px;
   font-weight: bold;
   line-height: 130%;
@@ -125,11 +124,9 @@
   right: 332px;
   border-inline-start: 1px solid var(--color-text_button-border);
   border-bottom: 1px solid var(--color-text_button-border);
-  z-index: 1;
 }
 
 .main {
-  background-color: var(--background-color);
   padding: 10px 10px 0 9px;
   width: 375px;
 }
@@ -143,7 +140,7 @@
 .title-section {
   color: var(--accent-color);
   background: transparent;
-  font-family: IBM Plex Mono, sans-serif;
+  font-family: "IBM Plex Mono", Arial, sans-serif;
   font-size: 18px;
   font-weight: bold;
   line-height: 130%;
@@ -152,9 +149,9 @@
 
 .text {
   color: var(--color-text);
-  font-family: IBM Plex Mono, sans-serif;
+  font-family: "IBM Plex Mono", Arial, sans-serif;
   font-size: 18px;
-  font-weight: regular;
+  font-weight: 400px;
   line-height: 130%;
   padding-block-start: 10px;
   padding-bottom: 20px;
@@ -181,7 +178,7 @@
 }
 
 .title-decor.thin-text {
-  font-weight: regular;
+  font-weight: 400px;
 }
 .title-decor.title-decor-indent {
   margin-block-end: 20px;
@@ -190,11 +187,11 @@
 .picture {
   width: 355px;
   margin-block-start: 7px;
+  object-fit: cover;
 }
 
 .footer {
   position: relative;
-  background-color: var(--background-color);
   display: flex;
   justify-content: center;
   align-items: center;
