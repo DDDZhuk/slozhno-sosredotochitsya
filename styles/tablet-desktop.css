@@ -1,4 +1,4 @@
-@media (768px < width ) {
+@media (768px <= width ) {
     .header {
         padding-left: 0;
         
