@@ -16,11 +16,8 @@
   --color-text: #353430;
   --background-image: url(../images/cover-image-light.png);
   --color-text-right-up: #fff1f7;
+  --color-text_button-border-hover: rgba(50, 49, 45, 0.4);
   --color-text_button-border: #353430;
-  
-}
-
-.theme_light {
   --color-imge-right-up: #fff1f7;
 }
 
@@ -33,7 +30,8 @@
     --color-text: #353430;
     --background-image: url(../images/cover-image-light.png);
     --color-text-right-up: #fff1f7;
-    --color-text_button-border: #353430;
+    --color-text_button-border-hover: rgba(50, 49, 45, 0.4);
     --color-imge-right-up: #fff1f7;
+    --color-text_button-border: #353430;
   }
 }

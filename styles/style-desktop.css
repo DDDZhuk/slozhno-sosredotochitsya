@@ -1,11 +1,14 @@
 @media (width >= 1024px) {
   .header {
-    width: 1024px;
-    
+    max-width: 1024px;
   }
 
   .decorated-zone-right-up {
     left: 943px;
+  }
+  .decorated-zone-right-up::after {
+    top: 0px;
+    right: -28px
   }
 
   .header__theme-menu-list {
@@ -14,19 +17,21 @@
 
   .header__theme-menu {
     margin-block-start: 8px;
-    margin-right: 387px;
+    margin-right: 386px;
   }
 
   .heade {
     margin-block-start: 269px;
     padding: 6px 0;
+    margin-right: 260px;
   }
 
   .title-head {
     margin-block-start: 108px;
     margin-bottom: 112px;
     margin-right: 2px;
-    width: 491px;
+    max-width: 491px;
+    
   }
 
   .box-title {
@@ -35,22 +40,20 @@
   }
 
   .title-head::after {
-    top: 161px;
-    right: 960px;
+    top: 162px;
+    right: 959px;
   }
 
   .main {
-    width: 1024px;
+    max-width: 1024px;
     margin-right: 17px;
   }
+
   .section-columns-tablet {
-    grid-template-columns: 343px 470px;
+    grid-template-columns: 344px 648px;
     margin-block-start: 59px;
   }
 
-  .text-column-dekstop {
-    width: 649px;
-  }
   .title-section {
     padding-left: 7px;
   }
@@ -61,14 +64,14 @@
     gap: 20px;
     padding-left: 7px;
   }
+
   .title-section-tablet {
-    width: 280px;
+    max-width: 280px;
   }
 
   .sction-blok-tablet_img {
     padding-left: 7px;
   }
-
 
   .picture-tablet-up_left {
     width: 649px;
@@ -79,14 +82,17 @@
     width: 315px;
     height: 595px;
   }
+
   .picture-tablet-center_center {
     width: 315px;
     height: 315px;
   }
+
   .picture-tablet-center_left {
     width: 315px;
     height: 768px;
   }
+
   .picture-tablet-end_end {
     width: 649px;
     height: 428px;
@@ -94,20 +100,21 @@
 
   .footer {
     min-height: 827px;
-    width: 1024px;
+    max-width: 1024px;
     padding: 20px;
   }
+
   .footer-text-position {
     margin-block-start: 58px;
-    
   }
 
   .style-big-text.footer-text-position::after {
-    top: 79px;
+    top: 80px;
+    left: 722px;
   }
 
   .style-big-text.footer-text-position::before {
-    top: 782px;
-    right: 979px;
+    top: 783px;
+    right: 723px;
   }
 }
